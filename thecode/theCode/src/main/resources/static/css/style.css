@@ -1,0 +1,19 @@
+@charset "ISO-8859-1";
+
+form {
+	margin-top:50px;
+	margin-left:550px;
+	width: 200px;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+}
+
+form label {
+	margin-left:35px;
+	margin-bottom:10px;
+}
+
+form input {
+	margin-bottom:5px;
+}
