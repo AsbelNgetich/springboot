@@ -1,0 +1,74 @@
+@charset "ISO-8859-1";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit_header{
+  display: flex;
+  justify-content: flex-end;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid rgb(43, 42, 42);
+  margin-bottom: 20px;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/* Add language page */
+
+.add_language {
+  height: 500px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-top:30px;
+}
+
+.add_language input {
+  margin-bottom: 10px;
+ 
+}
+
+#submit_btn {
+  width: 80px;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+/* Language info page */
+
+.language_info {
+  padding: 20px;
+  border: 1px solid black;
+  height: 200px;
+  width: 400px;
+}
+
+/* Edit language page */
+.edit_language {
+  height: 500px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.edit_language input {
+  margin-bottom: 10px;
+}
