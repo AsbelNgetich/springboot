@@ -8,27 +8,27 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>New Ninja</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
  <h2>New Ninja</h2>  
  <%@ page isErrorPage="true" %> 
-    <form:form class="add_ninja" action="#" method="POST">
+    <form:form class="add_ninja" action="/ninja" method="POST" modelAttribute="newNinja">
         <form:label path="dojo">Dojo:</form:label>
-        <select name='department_id'>
-        
-            <option value="department['id']">department['name']</option>
-            
-        </select>
+        <form:select path="dojo">
+        	<c:forEach items="${dojos}" var="dojo">
+            <option value="${dojo.id}">${dojo.name}</option>
+    		</c:forEach>
+        </form:select> <br>
         <form:label path="firstName">First Name:</form:label>
-        <form:input path="firstName"/>
+        <form:input path="firstName"/> <br>
         <form:errors path="firstName" />
         <form:label path="lastName">Last Name:</form:label>
-        <form:input path="lastName"/>
+        <form:input path="lastName"/><br>
         <form:errors path="lastName" />
         <form:label path="age">Age:</form:label>
-        <form:input path="age"/>
+        <form:input path="age"/><br>
         <form:errors path="age" />
         <input id="submit_btn" type="submit" value="Create">
     </form:form>
